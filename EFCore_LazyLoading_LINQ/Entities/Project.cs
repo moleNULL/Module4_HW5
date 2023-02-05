@@ -8,9 +8,9 @@
         public string? ProgrammingLanguage { get; set; }
         public DateTime StartedTime { get; set; }
 
-        public List<Employee> Employees { get; set; } = new List<Employee>();
-        public List<EmployeeProject> EmployeeProjects { get; set; } = new List<EmployeeProject>();
+        public virtual List<Employee> Employees { get; set; } = new List<Employee>();
+        public virtual List<EmployeeProject> EmployeeProjects { get; set; } = new List<EmployeeProject>();
         public int ClientId { get; set; }
-        public Client? Client { get; set; }
+        public virtual Client? Client { get; set; }
     }
 }

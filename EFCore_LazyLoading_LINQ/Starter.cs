@@ -33,7 +33,7 @@ namespace EFCore_LazyLoading_LINQ
             }
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationContext>();
-            var options = optionsBuilder.UseSqlServer(connectionString).Options;
+            var options = optionsBuilder.UseLazyLoadingProxies().UseSqlServer(connectionString).Options;
 
             return options;
         }

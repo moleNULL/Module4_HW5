@@ -9,11 +9,11 @@
         public DateTime? DateOfBirth { get; set; }
 
         public int OfficeId { get; set; }
-        public Office? Office { get; set; }
+        public virtual Office? Office { get; set; }
         public int TitleId { get; set; }
-        public Title? Title { get; set; }
+        public virtual Title? Title { get; set; }
 
-        public List<Project> Projects { get; set; } = new List<Project>();
-        public List<EmployeeProject> EmployeeProjects { get; set; } = new List<EmployeeProject>();
+        public virtual List<Project> Projects { get; set; } = new List<Project>();
+        public virtual List<EmployeeProject> EmployeeProjects { get; set; } = new List<EmployeeProject>();
     }
 }
