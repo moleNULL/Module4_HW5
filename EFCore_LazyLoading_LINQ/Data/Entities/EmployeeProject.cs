@@ -1,4 +1,4 @@
-﻿namespace EFCore_LazyLoading_LINQ.Entities
+﻿namespace EFCore_LazyLoading_LINQ.Data.Entities
 {
     public class EmployeeProject
     {

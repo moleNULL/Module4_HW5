@@ -1,8 +1,8 @@
-﻿using EFCore_LazyLoading_LINQ.Entities;
+﻿using EFCore_LazyLoading_LINQ.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EFCore_LazyLoading_LINQ.Configurations
+namespace EFCore_LazyLoading_LINQ.Data.Configurations
 {
     public class OfficeConfiguration : IEntityTypeConfiguration<Office>
     {

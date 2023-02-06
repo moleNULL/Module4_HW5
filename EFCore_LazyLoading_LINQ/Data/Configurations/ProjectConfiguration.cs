@@ -1,8 +1,8 @@
-﻿using EFCore_LazyLoading_LINQ.Entities;
+﻿using EFCore_LazyLoading_LINQ.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace EFCore_LazyLoading_LINQ.Configurations
+namespace EFCore_LazyLoading_LINQ.Data.Configurations
 {
     public class ProjectConfiguration : IEntityTypeConfiguration<Project>
     {
@@ -37,12 +37,6 @@ namespace EFCore_LazyLoading_LINQ.Configurations
                     .WithMany(p => p.EmployeeProjects)
                     .HasForeignKey(ep => ep.ProjectId)
                     .OnDelete(DeleteBehavior.Cascade));
-
-            // one to many
-            builder.HasOne(p => p.Client)
-                .WithMany(c => c.Projects)
-                .HasForeignKey(p => p.ClientId)
-                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

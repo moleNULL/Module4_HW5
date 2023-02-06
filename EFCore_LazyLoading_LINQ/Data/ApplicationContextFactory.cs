@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
-namespace EFCore_LazyLoading_LINQ.Entities
+namespace EFCore_LazyLoading_LINQ.Data
 {
     public class ApplicationContextFactory : IDesignTimeDbContextFactory<ApplicationContext>
     {

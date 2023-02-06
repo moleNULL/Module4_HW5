@@ -1,8 +1,8 @@
-﻿using EFCore_LazyLoading_LINQ.Configurations;
-using EFCore_LazyLoading_LINQ.Entities;
+﻿using EFCore_LazyLoading_LINQ.Data.Configurations;
+using EFCore_LazyLoading_LINQ.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace EFCore_LazyLoading_LINQ
+namespace EFCore_LazyLoading_LINQ.Data
 {
     public class ApplicationContext : DbContext
     {
