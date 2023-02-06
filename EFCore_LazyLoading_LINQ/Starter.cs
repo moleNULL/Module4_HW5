@@ -1,7 +1,5 @@
-﻿using System.Globalization; // needed to print money (Project.Budget) in this format "19,950,000"
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using EFCore_LazyLoading_LINQ.Data.Entities;
 using EFCore_LazyLoading_LINQ.Data;
 
